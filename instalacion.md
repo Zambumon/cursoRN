@@ -1,18 +1,17 @@
-# Instalación de tensor flow en python
+# Instalación de TensorFlow
 
-Pasos previos: tener linux 64 bits con python 2.7
+Prerrequisitos: tener linux 64 bits con python 2.7
 
 
 1.Instalamos el pip
 ```
-sudo apt-get install python-pip python-dev
+$ sudo pip uninstall tensorflow # for Python 2.7
+$ sudo pip3 uninstall tensorflow # for Python 3.n
 ```
-2. Creamos una variable global para referenciar la librería
+2. Instalación de TensorFlow invocando __una__ de los siguientes comandos:
 ```
-export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp27-none-linux_x86_64.whl
-```
-
-3. Instalamos tensor flow
-```
-sudo pip install --upgrade $TF_BINARY_UR
+$ pip install tensorflow      # Python 2.7; soporte CPU  (sin soporte para GPU)
+$ pip3 install tensorflow     # Python 3.n; soporte CPU (sin soporte para GPU)
+$ pip install tensorflow-gpu  # Python 2.7; soporte GPU
+$ pip3 install tensorflow-gpu # Python 3.n; soporte GPU
 ```
