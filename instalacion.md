@@ -3,7 +3,7 @@
 Pasos previos: tener linux 64 bits con python 2.7
 
 
-1.Instalamos el pip
+1. Instalamos el pip
  ```
  $ sudo apt-get install python-pip python-dev
  ```
